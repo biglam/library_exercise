@@ -17,8 +17,10 @@ class Library
       "Soz, no books here"
     else
       books.map do |key, book_object|
-        book_object.title
+        #book_object.title - library shouldn't know what a book looks like so...
+        book_object.pretty_string
       end.join("\n")
+      #books.map { |key, book_object| book.pretty_string }.join(\n)
     end
   end
 
