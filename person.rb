@@ -17,10 +17,15 @@ class Person
 
     def books_borrowed
       books.map do |key, book_object|
-        #book_object.title - library shouldn't know what a book looks like so...
         book_object.pretty_string
       end
     end
 
+
+
+def give_back(book)
+
+  books.delete(book)
+end
 
 end

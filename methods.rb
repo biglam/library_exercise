@@ -67,7 +67,19 @@ def return_book(library)
   puts
   puts "List of books borrowed:"
   library.get_persons_books(borrower)
-  #puts person.books_borrowed
+ 
+  puts "Which book are they returning: "
+  book_returned = gets.chomp
+  library.return_book(borrower, book_returned)
 
+end
 
+def list_borrowed_books(library)
+  puts library.list_people
+  puts 
+  puts "Who's books do you want to list: "
+  borrower = gets.chomp
+  puts
+  puts "List of books borrowed:"
+  library.get_persons_books(borrower)
 end

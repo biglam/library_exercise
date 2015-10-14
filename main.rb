@@ -35,7 +35,7 @@ while response != 0
     when 6
       return_book(my_library)
     when 7
-      # TODO: List borrowed books
+      list_borrowed_books(my_library)
     else
       puts "Invalid option"
   end

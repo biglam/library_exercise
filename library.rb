@@ -39,13 +39,17 @@ class Library
   def lend(borrower, book_title)
     person = people[borrower]
     book = books.delete (book_title) #returns book and deletes from library hash
-
     person.borrow(book)
-
   end
 
   def get_persons_books(person)
     puts people[person].books_borrowed
+  end
+
+  def return_book(borrower, book)
+    person = people[borrower]
+    returned = person.give_back(book)
+    add_book(returned)
   end
 
 end
