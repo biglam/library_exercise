@@ -7,4 +7,9 @@ class Library
     @books = {}
   end
 
+  def add_book(book)
+    #adds book to hash with title as key
+    books[book.title] = book #no @ cos accessing through :books method attr
+  end
+
 end

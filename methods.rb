@@ -18,6 +18,13 @@ def menu
   gets.to_i
 end
 
-def create_book(library)
-
+def create_book(library) #ONLY creates new book (doesn't care what happens after that)
+  print "Title: "
+  title = gets.chomp
+  print "Genre: "
+  genre = gets.chomp
+  #creates book with values just entered
+  newbook = Book.new(title: title, genre: genre)
+  #asks library to add book (instead of shoveling in)
+  library.add_book(newbook)
 end
