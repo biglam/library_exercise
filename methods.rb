@@ -56,6 +56,18 @@ def lend_book(library)
   print "Which person is going to borrow it: "
   borrower = gets.chomp
 
-  library.lend(borrower, book_title)
-  
+  library.lend(borrower, book_title)  
+end
+
+def return_book(library)
+  puts library.list_people
+  puts 
+  puts "Which person wants to return a book: "
+  borrower = gets.chomp
+  puts
+  puts "List of books borrowed:"
+  library.get_persons_books(borrower)
+  #puts person.books_borrowed
+
+
 end

@@ -44,4 +44,8 @@ class Library
 
   end
 
+  def get_persons_books(person)
+    puts people[person].books_borrowed
+  end
+
 end

@@ -14,4 +14,13 @@ class Person
     def borrow(book)
       books[book.title] = book
     end
+
+    def books_borrowed
+      books.map do |key, book_object|
+        #book_object.title - library shouldn't know what a book looks like so...
+        book_object.pretty_string
+      end
+    end
+
+
 end
