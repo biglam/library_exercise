@@ -21,7 +21,7 @@ while response != 0
     when 4
       list_people(my_library)
     when 5
-      # TODO: Lend book
+      lend_book(my_library)
     when 6
       # TODO: Return book
     when 7

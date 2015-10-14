@@ -36,4 +36,12 @@ class Library
     end
   end
 
+  def lend(borrower, book_title)
+    person = people[borrower]
+    book = books.delete (book_title) #returns book and deletes from library hash
+
+    person.borrow(book)
+
+  end
+
 end

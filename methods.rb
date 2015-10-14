@@ -45,3 +45,17 @@ end
 def list_people(library)
   puts library.list_people
 end
+
+def lend_book(library)
+  puts library.list_books
+  puts
+  print "Which book do you want to lend: "
+  book_title = gets.chomp
+  puts
+  puts library.list_people
+  print "Which person is going to borrow it: "
+  borrower = gets.chomp
+
+  library.lend(borrower, book_title)
+  
+end
