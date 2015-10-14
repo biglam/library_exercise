@@ -15,11 +15,11 @@ while response != 0
     when 1
       create_book(my_library)
     when 2
-      # TODO: create_person(library)
+      create_person(my_library)
     when 3
       list_books(my_library)
     when 4
-      # TODO: List all people
+      list_people(my_library)
     when 5
       # TODO: Lend book
     when 6

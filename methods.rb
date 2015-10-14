@@ -29,7 +29,19 @@ def create_book(library) #ONLY creates new book (doesn't care what happens after
   library.add_book(newbook)
 end
 
+def create_person(library)
+  print "Name: "
+  name = gets.chomp
+
+  person = Person.new(name: name)
+  library.add_person(person) #add person to library (asks library to)
+end
+
 def list_books(library)
   #tell library to display its books (doesn't worry about how)
   puts library.list_books
+end
+
+def list_people(library)
+  puts library.list_people
 end

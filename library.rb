@@ -12,6 +12,10 @@ class Library
     books[book.title] = book #no @ cos accessing through :books method attr
   end
 
+  def add_person(person)
+    people[person.name] = person
+  end
+
   def list_books
     if books.empty?
       "Soz, no books here"
@@ -21,6 +25,14 @@ class Library
         book_object.pretty_string
       end.join("\n")
       #books.map { |key, book_object| book.pretty_string }.join(\n)
+    end
+  end
+
+  def list_people
+    if people.empty?
+      "Nae pals"
+    else
+      people.map { |key, person_object| person_object.pretty_string}.join("\n")
     end
   end
 

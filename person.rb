@@ -7,4 +7,8 @@ class Person
       @books = {}
     end
 
+
+    def pretty_string
+      puts "#{name} has #{books.size} books borrowed from the library."
+    end
 end
