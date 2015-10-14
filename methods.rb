@@ -17,3 +17,7 @@ def menu
   print "--> "
   gets.to_i
 end
+
+def create_book(library)
+
+end
