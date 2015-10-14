@@ -17,7 +17,7 @@ while response != 0
     when 2
       # TODO: create_person(library)
     when 3
-      # TODO: list all books
+      list_books(my_library)
     when 4
       # TODO: List all people
     when 5

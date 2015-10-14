@@ -28,3 +28,8 @@ def create_book(library) #ONLY creates new book (doesn't care what happens after
   #asks library to add book (instead of shoveling in)
   library.add_book(newbook)
 end
+
+def list_books(library)
+  #tell library to display its books (doesn't worry about how)
+  puts library.list_books
+end
